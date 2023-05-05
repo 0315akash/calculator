@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.root-container{
+    background-color: #0A1921;
+    height: 100vh;
+    width: 1oovw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-container{
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.calc-container > input , .calc-container > button{
+    padding: 10px 5px;
+    border: none;
+}
+
+.calc-container>button{
+    background-color: #b8124c;
+    color: white;
+    font-size: 24px;
+    
+}
+.calc-container > button:hover{
+    background-color:#6b1030;
+}
+
+.calc-container > input:focus{
+    background-color: #e7e7e7;
+    outline: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+}
+
+.grid-container > button{
+     background-color: #0D2835;
+     padding: 10px;
+     color: white;
+     font-size: 20px;
+     text-align: center;
+     border: none;
+}
+.grid-container > button:hover{
+    background-color: #0a1f2b;
+}
+
+.grid-container > .bottom-row{
+    justify-self: stretch;
+    grid-column:1/5;
+    display: flex;
+    background-color: #0A1921;
+    gap: 2px;
+    padding: 0;
+    
+}
+
+.grid-container > .bottom-row > button{
+    background-color: #0D2835;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    border: none;
+    color: white;
+}
+.grid-container > .bottom-row > button:hover{
+    background-color: #0a1f2b;
+}    
+
+input:disabled{
+    background-color: white;
+}
+
